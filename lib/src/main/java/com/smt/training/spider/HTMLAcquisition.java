@@ -134,7 +134,7 @@ public class HTMLAcquisition {
 		SSLSocketFactory factory = (SSLSocketFactory) SSLSocketFactory.getDefault();
 		HTMLWriter writeFile = new HTMLWriter();
 		StringBuilder build = new StringBuilder();
-		String credentials = "requestType=reqBuild&pmid=ADMIN_LOGIN&emailAddress=george.clam@siliconmtn.com&password=357!FaJ#&l=";
+		String credentials = "requestType=reqBuild&pmid=ADMIN_LOGIN&emailAddress=<>&password=<>&l=";
 
 		try (SSLSocket socket = (SSLSocket) factory.createSocket(host, 443)) {
 			socket.startHandshake();
