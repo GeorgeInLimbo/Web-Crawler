@@ -112,7 +112,7 @@ public class HTMLAcquisition {
 		String cookieString = parse.retrieveCookies();
 		if (parse.cookies != null && !parse.cookies.isEmpty()) {
 			logr.info("COOKIES!: " + cookieString);
-			out.writeBytes("Cookie: " + cookieString);
+			out.writeBytes("Cookie: " + cookieString + "\r\n");
 		}
 		out.writeBytes("\r\n");
 		out.flush();
